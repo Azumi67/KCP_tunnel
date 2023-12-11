@@ -45,8 +45,8 @@
 -  **تانل KCP + ICMP تک کانفیگ** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp--icmp-%D8%AA%DA%A9-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
 -  **تانل KCP TCP مولتی کانفیگ (1 یا چند سرور خارج)** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp-tcp-%D9%85%D9%88%D9%84%D8%AA%DB%8C-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
 - **تانل KCP + ICMP مولتی کانفیگ** >>  **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp--icmp-%D9%85%D9%88%D9%84%D8%AA%DB%8C-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
-- **تانل KCP + PrivateIP کانفیگ** >> **[کلیک]()**
-- **اسکریپت های کارآمد** >> **[کلیک]()**
+- **تانل KCP + PrivateIP کانفیگ** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel#%D8%AA%D8%A7%D9%86%D9%84-kcp--privateip-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
+- **اسکریپت های کارآمد** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel#%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A2%D9%85%D8%AF-)**
 
 --------------
  
@@ -64,12 +64,13 @@
 - امکان استفاده از ایپی 6 سرور دوم خارج تنها در TCP MULTI CONFIGS
 - امکان استفاده از پورت رنج برای پورت تانل
 - استفاده از SMUXV2 و FEC در تانل
-- کانفیگ پر سرعت برای گیم
 - امکان استفاده از IP6IP6 و تانل KCP
-- امکان استفاده ار ICMP و تانل KCP
+- امکان استفاده ار ICMP با پرایوت ایپی 4 و تانل KCP
 - امکان حذف تمامی تانل ها و سرویس ها
 
+-------------------
 **این کانفیگ برای اینترنت من تنظیم شده و خیلی خوب عمل میکنه ولی برای شما ممکن است ، نتیجه مطلوب نباشد پس حتما تست کنید**
+
 **مقدار MTU و DS را بدون تغییر گذاشتم**
 
 What is SMUX ?
