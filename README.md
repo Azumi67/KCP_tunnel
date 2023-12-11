@@ -410,7 +410,7 @@ python3 <(curl -Ls https://raw.githubusercontent.com/Azumi67/KCP_tunnel/main/kcp
  <div dir="rtl">&bull; اگر سرور شما خطای externally-managed-environment داد از دستور زیر اقدام به اجرای اسکریپت نمایید.</div>
  
 ```
-https://raw.githubusercontent.com/Azumi67/KCP_tunnel/main/managed.sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/KCP_tunnel/main/managed.sh)"
 ```
 
 ---------------------------------------------
