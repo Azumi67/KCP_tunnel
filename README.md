@@ -36,7 +36,7 @@
  **فهرست :**
  ----------------------
  
-**دسترسی سریع به اسکریپت** >> **[کلیک]()**
+**دسترسی سریع به اسکریپت** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel#%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%85%D9%86)**
 - **امکانات** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%A7%D9%85%DA%A9%D8%A7%D9%86%D8%A7%D8%AA)**
 - **تک سرور** : 
 - **تانل KCP TCP تک کانفیگ** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp-tcp-%D8%AA%DA%A9-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
