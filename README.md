@@ -126,7 +126,6 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   <img src="https://github.com/Azumi67/Game_tunnel/assets/119934376/36dae725-19bb-4a72-9da3-329eeae557ff" alt="Image" />
 </p>
 
-
 - سپس سرور ایران را کانفیگ میکنیم
 - حتما باید هر دو سرور ایران و خارج ایپی 6 داشته باشند. اگر سرور ایران شما ایپی 6 ندارد، از روش ICMP یا IP6IP6 و یا تانل بروکر استفاده نمایید.
 - ایپی 6 سرور خارج را دوباره وارد نمایید
@@ -151,8 +150,7 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   <img src="https://github.com/Azumi67/Game_tunnel/assets/119934376/f87cdf39-9e17-423e-ba66-aa741185832b" alt="Image" />
 </p>
 
-- **چون تانل ICMP کانفیگ کردید باید برای کانفیگ دوباره حتما کانفیگ قدیمی را uninstall کنید.**
-
+ **برای کانفیگ دوباره حتما کانفیگ قدیمی را uninstall کنید.**
 - نخست سرور خارج را کانفیگ میکنیم
 - اگر میخواهید توسط پرایوت ایپی 4 و تانل icmp ، تانل kcp را برقرار کنید، این روش برای شما مناسب است.
 - حتما دقت نمایید که قبلا این تانل را نساخته باشید چون دیوایس جدید برای شما میسازد. پس حتما با دستور ip a از موجود نبودن آن اطمینان حاصل فرمایید.
@@ -171,7 +169,6 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
  <p align="right">
   <img src="https://github.com/Azumi67/Game_tunnel/assets/119934376/ae1dacfe-a670-42c6-a3a0-feaaa3d51dcb" alt="Image" />
 </p>
-
 
 
 - سپس سرور ایران را کانفیگ میکنیم
@@ -196,7 +193,6 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   <img src="https://github.com/Azumi67/Game_tunnel/assets/119934376/45880a58-a380-4c78-962b-e4bcb8ba4d63" alt="Image" />
 </p>
 
-
 - نخست سرور خارج را کانفیگ میکنیم
 - میخواهیم از ایپی 6 استفاده نماییم پس هر دو طرف سرور باید ایپی 6 داشته باشند.
 - میتوانید برای سرور ایران از تانل بروکر استفاده نمایید.
@@ -219,7 +215,6 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
  <p align="right">
   <img src="https://github.com/Azumi67/Game_tunnel/assets/119934376/dc776d6d-fd71-4a72-9068-2cad38a52ca0" alt="Image" />
 </p>
-
 
 - سپس سرور ایران را کانفیگ میکنیم
 - میخواهیم از ایپی 6 استفاده نماییم پس هر دو طرف سرور باید ایپی 6 داشته باشند.
@@ -246,8 +241,7 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   <img src="https://github.com/Azumi67/Game_tunnel/assets/119934376/1cb8369f-5eff-4fb8-9717-953ec5f0050b" alt="Image" />
 </p>
 
-- **چون تانل ICMP کانفیگ کردید باید برای کانفیگ دوباره حتما کانفیگ قدیمی را uninstall کنید.**
-
+**باید برای کانفیگ دوباره حتما کانفیگ قدیمی را uninstall کنید.**
 - نخست سرور خارج را کانفیگ میکنیم
 - اگر میخواهید توسط پرایوت ایپی  4 و تانل icmp ، تانل kcp را برقرار کنید، این روش برای شما مناسب است.
 - حتما دقت نمایید که قبلا این تانل را نساخته باشید چون دیوایس جدید برای شما میسازد. پس حتما با دستور ip a از موجود نبودن آن اطمینان حاصل فرمایید.
@@ -297,8 +291,7 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   <img src="https://github.com/Azumi67/KCP_tunnel/assets/119934376/0a2e2dfd-b8f8-437a-8f22-ddebe9572cfc" alt="Image" />
 </p>
 
-- **قبل از کانفیگ ، اطمینان پیدا کنید که تانل 6to4 یا تانل های دیگری ندارید که خطای بافر سایز نگیرید و همچنین کانفیگ های روش های دیگر هم پاک کنید که اختلالی در کانفیگ شما به وجود نیاورد**
-
+**قبل از کانفیگ ، اطمینان پیدا کنید که تانل 6to4 یا تانل های دیگری ندارید که خطای بافر سایز نگیرید و همچنین کانفیگ های روش های دیگر هم پاک کنید که اختلالی در کانفیگ شما به وجود نیاورد**
 - نخست سرور خارج را کانفیگ میکنیم
 - میخواهیم از طریق IP6IP6 و KCP، تانل را برقرار کنیم.
 - حتما دقت نمایید که قبلا پرایوت ایپی نداشته باشید که خطای بافر سایز نگیرید.
