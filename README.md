@@ -1,5 +1,3 @@
-به زودی اپدیت میشود.
-
 ![R (2)](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/a064577c-9302-4f43-b3bf-3d4f84245a6f)
 نام پروژه : تانل KCP - TCP - ICMP - IP6IP6
 ---------------------------------------------------------------
@@ -412,7 +410,7 @@ python3 <(curl -Ls https://raw.githubusercontent.com/Azumi67/KCP_tunnel/main/kcp
  <div dir="rtl">&bull; اگر سرور شما خطای externally-managed-environment داد از دستور زیر اقدام به اجرای اسکریپت نمایید.</div>
  
 ```
-
+https://raw.githubusercontent.com/Azumi67/KCP_tunnel/main/managed.sh
 ```
 
 ---------------------------------------------
