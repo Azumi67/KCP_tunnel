@@ -2116,7 +2116,7 @@ def get_ipv4():
                 pass
     return None
     
-def kcpk_service(command, key, restart_time="10"):
+def kcpk_service(command, key, restart_time="5"):
     service_file_path = "/etc/systemd/system/kcpkharej.service"
     
     with open(service_file_path, "w") as file:
@@ -2127,6 +2127,7 @@ def kcpk_service(command, key, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n")    
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2160,7 +2161,7 @@ def kharej_s():
     res_kcp_k()
     display_checkmark("\033[92mConfig Completed!\033[0m")
 
-def kcpi_service(command, key, restart_time="10"):
+def kcpi_service(command, key, restart_time="5"):
     service_file_path = "/etc/systemd/system/kcpiran.service"
     
     with open(service_file_path, "w") as file:
@@ -2171,6 +2172,7 @@ def kcpi_service(command, key, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2209,7 +2211,7 @@ def iran_s():
         print(f"\033[93m| Your Address & Port: {current_ipv4} : {config_port}  \033[0m")
         print("\033[93m╰─────────────────────────────────────────────────────────╯\033[0m")
 
-def kcpku_service(command, key, restart_time="10"):
+def kcpku_service(command, key, restart_time="5"):
     service_file_path = "/etc/systemd/system/kcpkharej.service"
     
     with open(service_file_path, "w") as file:
@@ -2220,6 +2222,7 @@ def kcpku_service(command, key, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2251,7 +2254,7 @@ def khareju_s():
     res_kcp_k()
     display_checkmark("\033[92mConfig Completed!\033[0m")
 
-def kcpiu_service(command, key, restart_time="10"):
+def kcpiu_service(command, key, restart_time="5"):
     service_file_path = "/etc/systemd/system/kcpiran.service"
     
     with open(service_file_path, "w") as file:
@@ -2262,6 +2265,7 @@ def kcpiu_service(command, key, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2305,7 +2309,7 @@ def iranu_s():
         print("\033[93m╰─────────────────────────────────────────────────────────╯\033[0m")
         
 
-def service_k_multi(command, service_file_name, restart_time="10"):
+def service_k_multi(command, service_file_name, restart_time="5"):
     service_file_path = f"/etc/systemd/system/{service_file_name}.service"
     
     with open(service_file_path, "w") as file:
@@ -2316,6 +2320,7 @@ def service_k_multi(command, service_file_name, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2362,7 +2367,7 @@ def kharej_m():
     res_kcp_km()
     display_checkmark("\033[92mConfigs Completed!\033[0m")
    
-def service_i_multi(command, service_file_name, restart_time="10"):
+def service_i_multi(command, service_file_name, restart_time="5"):
     service_file_path = f"/etc/systemd/system/{service_file_name}.service"
     
     with open(service_file_path, "w") as file:
@@ -2373,6 +2378,7 @@ def service_i_multi(command, service_file_name, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2513,7 +2519,7 @@ def iranu_m():
     display_checkmark("\033[92mConfigs Completed!\033[0m")
     
 
-def service_pk_multi(command, service_file_name, restart_time="10"):
+def service_pk_multi(command, service_file_name, restart_time="5"):
     service_file_path = f"/etc/systemd/system/{service_file_name}.service"
     
     with open(service_file_path, "w") as file:
@@ -2524,6 +2530,7 @@ def service_pk_multi(command, service_file_name, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
@@ -2570,7 +2577,7 @@ def kharej_pm():
     res_kcp_km()    
     display_checkmark("\033[92mConfigs Completed!\033[0m")
    
-def service_pi_multi(command, service_file_name, restart_time="10"):
+def service_pi_multi(command, service_file_name, restart_time="5"):
     service_file_path = f"/etc/systemd/system/{service_file_name}.service"
     
     with open(service_file_path, "w") as file:
@@ -2581,6 +2588,7 @@ def service_pi_multi(command, service_file_name, restart_time="10"):
         file.write(f"ExecStart={command}\n")
         file.write("Restart=always\n")
         file.write(f"RestartSec={restart_time}\n")
+        file.write(f"LimitNOFILE=1048576\n") 
         file.write("\n")
         file.write("[Install]\n")
         file.write("WantedBy=default.target\n")
