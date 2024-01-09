@@ -52,6 +52,7 @@
 - مورد دیگر اینکه، در سرور های ایران اگر DNS مشکل داشته باشد، ممکن است دانلود انجام نشود. حتما از طریق nano /etc/resolv.conf اقدام به تغییر موقتی dns خود بکنید .
 - ممکن است در سرور ایران شما، سرعت دانلود پایین باشد و برای همین، ممکنه که دانلود پیش نیاز ها کمی طول بکشد.
 - پورت ها در آموزش برای مثال استفاده شده اند، شما میتوانید از پورت های دلخواه خودتان استفاده نمایید.
+
 What is SMUX ?
 SMUX is a protocol designed to multiplex multiple logical connections over a single physical connection. It is used to improve the efficiency and performance of data transmission.
 
