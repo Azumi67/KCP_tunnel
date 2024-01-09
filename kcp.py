@@ -1700,7 +1700,7 @@ def rmve_cron():
 
     entries_to_remove = [
         f"0 */2 * * * sh /etc/clear.sh",
-        "0 */1 * * * /etc/kcp.sh",
+        "0 * * * * /etc/kcp.sh",
         "0 */2 * * * /etc/kcp.sh",
         "0 */3 * * * /etc/kcp.sh",
         "0 */4 * * * /etc/kcp.sh",
@@ -1747,7 +1747,7 @@ def rmve_cron():
 
 def delete_cron():
     entries_to_delete = [
-        "0 */1 * * * /etc/kcp.sh",
+        "0 * * * * /etc/kcp.sh",
         "0 */2 * * * /etc/kcp.sh",
         "0 */3 * * * /etc/kcp.sh",
         "0 */4 * * * /etc/kcp.sh",
@@ -1808,9 +1808,15 @@ def res_kcp_im():
     subprocess.call("chmod +x /etc/kcp.sh", shell=True)
     print("\033[93m╭──────────────────────────────────────╮\033[0m")
     hours = input("\033[93mEnter the \033[92mReset timer:\033[0m ")
-    cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
-    existing_crontab = ""
     print("\033[93m╰──────────────────────────────────────╯\033[0m")
+
+    cron_entry = ""
+    if hours == "1":
+        cron_entry = "0 * * * * /etc/kcp.sh"
+    else:
+        cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
+
+    existing_crontab = ""
     try:
         existing_crontab = subprocess.check_output("crontab -l", shell=True).decode()
     except subprocess.CalledProcessError:
@@ -1841,9 +1847,15 @@ def res_kcp_km():
     subprocess.call("chmod +x /etc/kcp.sh", shell=True)
     print("\033[93m╭──────────────────────────────────────╮\033[0m")
     hours = input("\033[93mEnter the \033[92mReset timer:\033[0m ")
-    cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
-    existing_crontab = ""
     print("\033[93m╰──────────────────────────────────────╯\033[0m")
+
+    cron_entry = ""
+    if hours == "1":
+        cron_entry = "0 * * * * /etc/kcp.sh"
+    else:
+        cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
+
+    existing_crontab = ""
     try:
         existing_crontab = subprocess.check_output("crontab -l", shell=True).decode()
     except subprocess.CalledProcessError:
@@ -1870,9 +1882,15 @@ def res_kcp_i():
     subprocess.call("chmod +x /etc/kcp.sh", shell=True)
     print("\033[93m╭──────────────────────────────────────╮\033[0m")
     hours = input("\033[93mEnter the \033[92mReset timer:\033[0m ")
-    cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
-    existing_crontab = ""
     print("\033[93m╰──────────────────────────────────────╯\033[0m")
+
+    cron_entry = ""
+    if hours == "1":
+        cron_entry = "0 * * * * /etc/kcp.sh"
+    else:
+        cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
+
+    existing_crontab = ""
     try:
         existing_crontab = subprocess.check_output("crontab -l", shell=True).decode()
     except subprocess.CalledProcessError:
@@ -1900,9 +1918,15 @@ def res_kcp_k():
     subprocess.call("chmod +x /etc/kcp.sh", shell=True)
     print("\033[93m╭──────────────────────────────────────╮\033[0m")
     hours = input("\033[93mEnter the \033[92mReset timer:\033[0m ")
-    cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
-    existing_crontab = ""
     print("\033[93m╰──────────────────────────────────────╯\033[0m")
+
+    cron_entry = ""
+    if hours == "1":
+        cron_entry = "0 * * * * /etc/kcp.sh"
+    else:
+        cron_entry = f"0 */{hours} * * * /etc/kcp.sh"
+
+    existing_crontab = ""
     try:
         existing_crontab = subprocess.check_output("crontab -l", shell=True).decode()
     except subprocess.CalledProcessError:
