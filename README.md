@@ -2,8 +2,25 @@
 نام پروژه : تانل KCP - TCP - ICMP - IP6IP6
 ---------------------------------------------------------------
 
------------
-**توضیح کوتاه در مورد این پروژه :**
+![check](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/13de8d36-dcfe-498b-9d99-440049c0cf14)
+**امکانات**
+
+
+- پشتیبانی از TCP
+- قابلیت تانل بر روی تک پورت و 5 پورت
+- امکان استفاده از ایپی 6 سرور دوم خارج تنها در TCP MULTI CONFIGS
+- امکان استفاده از پورت رنج برای پورت تانل
+- استفاده از SMUXV2 و FEC در تانل
+- امکان استفاده از IP6IP6 و تانل KCP
+- امکان استفاده ار ICMP با پرایوت ایپی 4 و تانل KCP
+- امکان حذف تمامی تانل ها و سرویس ها
+----------------------------------
+
+ <div align="right">
+  <details>
+    <summary><strong>توضیحات</strong></summary>
+  
+------------------------------------ 
 
 - حتما در سرور تست، نخست تانل را ازمایش کنید و سپس اقدام به استفاده از آن بکنید. این تانل را من برای مصرف شخصی و گیم استفاده میکنم .
 اگر اختلالی در تانل داشتید همیشه وارد مسیر روبرو شوید cd /etc/systemd/system و با دستور ls ، سرویس های خارج و ایران را بیابید و با دستور systemctl status servicename و یا journalctl -u servicename.service ، دلیل اختلال تانل را بیابید
@@ -19,60 +36,28 @@
 - پنل شما در خارج باید نصب شده باشد
 - لطفا برای کانفیگ دوباره، نخست از منوی uninstall اقدام به حذف تانل کنید تا مشکلی پیش نیاید.
 - در آخر هر کانفیگ، ایپی 4 سرور ایران شما با پورت نهایی نمایش داده میشود.
+  </details>
+</div>
 
 --------------
-
-![Exclamation-Mark-PNG-Clipart](https://github.com/Azumi67/Game_tunnel/assets/119934376/3951d7d9-0e17-4723-b07f-786500ccbc7f)**چند نکته**
+ <div align="right">
+  <details>
+    <summary><strong>نکات</strong></summary>
+   
+------------------------------------ 
+    
 
 - برای تانل ICMP ، حتما اگر اشتباهی در کانفیگ انجام دادید باید حتما هم در سرور ایران و خارج حذفش کنید و هر دو سرور ریبوت شود در غیر این صورت خطای SERVER IS FULL را میگیرید.
 - قبل از کانفیگ دوباره، همیشه با دستور ip a مشاهده کنید که tun0 یا tun1 که مربوط به icmp است ، موجود نباشد. حتما پس از Uninstall ICMP سرور خود را ریست نمایید.
 - مورد دیگر اینکه، در سرور های ایران اگر DNS مشکل داشته باشد، ممکن است دانلود انجام نشود. حتما از طریق nano /etc/resolv.conf اقدام به تغییر موقتی dns خود بکنید .
 - ممکن است در سرور ایران شما، سرعت دانلود پایین باشد و برای همین، ممکنه که دانلود پیش نیاز ها کمی طول بکشد.
 - پورت ها در آموزش برای مثال استفاده شده اند، شما میتوانید از پورت های دلخواه خودتان استفاده نمایید.
-
-
-------------------------
-![307981](https://github.com/Azumi67/V2ray_loadbalance_multipleServers/assets/119934376/39b2794b-fd04-4ae5-baea-d4b66138766e)
- **فهرست :**
- ----------------------
- 
-**دسترسی سریع به اسکریپت** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel#%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%85%D9%86)**
-- **امکانات** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%A7%D9%85%DA%A9%D8%A7%D9%86%D8%A7%D8%AA)**
-- **تک سرور** : 
-- **تانل KCP TCP تک کانفیگ** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp-tcp-%D8%AA%DA%A9-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
--  **تانل KCP + ICMP تک کانفیگ** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp--icmp-%D8%AA%DA%A9-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
--  **تانل KCP TCP مولتی کانفیگ (1 یا چند سرور خارج)** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp-tcp-%D9%85%D9%88%D9%84%D8%AA%DB%8C-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
-- **تانل KCP + ICMP مولتی کانفیگ** >>  **[کلیک](https://github.com/Azumi67/KCP_tunnel/tree/main#%D8%AA%D8%A7%D9%86%D9%84-kcp--icmp-%D9%85%D9%88%D9%84%D8%AA%DB%8C-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
-- **تانل KCP + PrivateIP کانفیگ** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel#%D8%AA%D8%A7%D9%86%D9%84-kcp--privateip-%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF)**
-- **اسکریپت های کارآمد** >> **[کلیک](https://github.com/Azumi67/KCP_tunnel#%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A2%D9%85%D8%AF-)**
-
---------------
- 
- ![Exclamation-Mark-PNG-Clipart](https://github.com/Azumi67/KCP_tunnel/assets/119934376/96bc9a31-57d1-4c14-a988-f9284f547955)**نکته**
-
-- چند سرور خارج را وقت نکردم که تست کنم اما از نظر منطقی باید این کار شدنی باشد.تنها در TCP 5 Configs تست بفرمایید.
-
-------------------------
-![check](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/13de8d36-dcfe-498b-9d99-440049c0cf14)
-**امکانات**
--
-
-- پشتیبانی از TCP
-- قابلیت تانل بر روی تک پورت و 5 پورت
-- امکان استفاده از ایپی 6 سرور دوم خارج تنها در TCP MULTI CONFIGS
-- امکان استفاده از پورت رنج برای پورت تانل
-- استفاده از SMUXV2 و FEC در تانل
-- امکان استفاده از IP6IP6 و تانل KCP
-- امکان استفاده ار ICMP با پرایوت ایپی 4 و تانل KCP
-- امکان حذف تمامی تانل ها و سرویس ها
-
--------------------
-**این تانل برای من خیلی خوب عمل میکنه ولی برای شما ممکن است ، نتیجه مطلوب نباشد پس حتما تست کنید**
-
-**مقدار MTU و DS را بدون تغییر گذاشتم**
-
 What is SMUX ?
 SMUX is a protocol designed to multiplex multiple logical connections over a single physical connection. It is used to improve the efficiency and performance of data transmission.
+
+  </details>
+</div>
+
 
  ------------------------------------------------------
 
@@ -80,7 +65,8 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
  **پیش نیازها**
 
  - لطفا سرور اپدیت شده باشه.
- - میتوانید از اسکریپت اقای [Hwashemi](https://github.com/hawshemi/Linux-Optimizer) و یا [OPIRAN](https://github.com/opiran-club/VPS-Optimizer) هم برای بهینه سازی سرور در صورت تمایل استفاده نمایید. (پیش نیاز نیست)
+ - ایپی 4 و 6 خود را فوروارد کنید. اسکریپت optimizer این کار را میکند.
+ - میتوانید از اسکریپت اقای [Hwashemi](https://github.com/hawshemi/Linux-Optimizer) و یا [OPIRAN](https://github.com/opiran-club/VPS-Optimizer) هم برای بهینه سازی سرور در صورت تمایل استفاده نمایید. 
 
 
 ----------------------------
@@ -89,9 +75,15 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   ![6348248](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/398f8b07-65be-472e-9821-631f7b70f783)
 **آموزش**
 -
-![OIP2 (1)](https://github.com/Azumi67/V2ray_loadbalance_multipleServers/assets/119934376/3ec2f05f-3308-4441-8cce-62ab4776f4e2)
-**تانل KCP TCP تک کانفیگ**
-----------------------------------
+
+ <div align="right">
+  <details>
+    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>تانل KCP TCP تک کانفیگ</summary>
+  
+  
+------------------------------------ 
+
+
 ![green-dot-clipart-3](https://github.com/Azumi67/6TO4-PrivateIP/assets/119934376/902a2efa-f48f-4048-bc2a-5be12143bef3) **سرور خارج**
 
 **مسیر : KCP Tunnel TCP Single > Kharej**
@@ -133,11 +125,15 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
 - در سرور خارج، ریست تایمر را هر 3 ساعت گذاشتیم، پس باید در سرور ایران هم همان عدد را به کار ببریم.
 - در آخر ایپی سرور شما با پورت کانفیگ شما برای استفاده در کلاینت به شما نمایش داده میشود.
 
+  </details>
+</div>
+ <div align="right">
+  <details>
+    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>تانل KCP + ICMP تک کانفیگ</summary>
+  
+  
+------------------------------------ 
 
---------------------------------------
-![OIP2 (1)](https://github.com/Azumi67/V2ray_loadbalance_multipleServers/assets/119934376/3ec2f05f-3308-4441-8cce-62ab4776f4e2)
-**تانل KCP + ICMP تک کانفیگ**
--
 ![green-dot-clipart-3](https://github.com/Azumi67/6TO4-PrivateIP/assets/119934376/902a2efa-f48f-4048-bc2a-5be12143bef3) **سرور خارج**
 
 **مسیر : KCP Tunnel ICMP Single > Kharej**
@@ -177,10 +173,16 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
 - برای ریستارت سرویس عدد دلخواه خود را وارد نمایید. من عدد 3 را وارد کردم پس هر 3 ساعت سرویس من ریستارت میشود. دیسکانکشن در گیم مهم است پس با دقت این عدد را وارد نمایید.
 - در سرور خارج، ریست تایمر را هر 3 ساعت گذاشتیم، پس باید در سرور ایران هم همان عدد را به کار ببریم.
 - در آخر ایپی سرور شما با پورت کانفیگ شما برای استفاده در کلاینت به شما نمایش داده میشود.
---------------------------------------
-![OIP2 (1)](https://github.com/Azumi67/V2ray_loadbalance_multipleServers/assets/119934376/3ec2f05f-3308-4441-8cce-62ab4776f4e2)
-**تانل KCP TCP مولتی کانفیگ**
-----------------------------------
+  </details>
+</div>
+
+ <div align="right">
+  <details>
+    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>تانل KCP TCP مولتی کانفیگ</summary>
+  
+  
+------------------------------------ 
+
 ![green-dot-clipart-3](https://github.com/Azumi67/6TO4-PrivateIP/assets/119934376/902a2efa-f48f-4048-bc2a-5be12143bef3) **سرور خارج**
 
 **مسیر : KCP Tunnel TCP 5 CONFIGS > Kharej**
@@ -225,10 +227,17 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
 - برای ریستارت سرویس عدد دلخواه خود را وارد نمایید. من عدد 3 را وارد کردم پس هر 3 ساعت سرویس من ریستارت میشود. دیسکانکشن در گیم مهم است پس با دقت این عدد را وارد نمایید.
 - همان عددی که برای SERVICE RESTART در سرور خارج وارد کردید را هم دز سرور ایران، وارد نمایید.
 - در آخر ایپی سرور ایران و پورت کانفیگ شما نمایش داده میشود.
---------------------------------------
-![OIP2 (1)](https://github.com/Azumi67/V2ray_loadbalance_multipleServers/assets/119934376/3ec2f05f-3308-4441-8cce-62ab4776f4e2)
-**تانل KCP + ICMP مولتی کانفیگ**
-----------------------------------
+  </details>
+</div>
+
+ <div align="right">
+  <details>
+    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>تانل KCP + ICMP مولتی کانفیگ</summary>
+  
+  
+------------------------------------ 
+
+
 ![green-dot-clipart-3](https://github.com/Azumi67/6TO4-PrivateIP/assets/119934376/902a2efa-f48f-4048-bc2a-5be12143bef3) **سرور خارج**
 
 **مسیر : KCP Tunnel ICMP 5 CONFIGS > Kharej**
@@ -275,10 +284,17 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
 - برای ریستارت سرویس عدد دلخواه خود را وارد نمایید. من عدد 3 را وارد کردم پس هر 3 ساعت سرویس من ریستارت میشود. دیسکانکشن در گیم مهم است پس با دقت این عدد را وارد نمایید.
 - همان عددی که برای SERVICE RESTART در سرور خارج وارد کردید را هم دز سرور ایران، وارد نمایید.
 - در آخر ایپی سرور ایران و پورت کانفیگ شما نمایش داده میشود.
---------------------------------------
-![OIP2 (1)](https://github.com/Azumi67/V2ray_loadbalance_multipleServers/assets/119934376/3ec2f05f-3308-4441-8cce-62ab4776f4e2)
-**تانل KCP + PrivateIP کانفیگ**
-----------------------------------
+  </details>
+</div>
+
+ <div align="right">
+  <details>
+    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>تانل KCP + PrivateIP کانفیگ</summary>
+  
+  
+------------------------------------ 
+
+ 
 ![green-dot-clipart-3](https://github.com/Azumi67/6TO4-PrivateIP/assets/119934376/902a2efa-f48f-4048-bc2a-5be12143bef3) **سرور خارج**
 
 **مسیر : KCP Tunnel TCP PrivateIP > Kharej**
@@ -345,9 +361,11 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
 - میتوانید برای هر دو پورت تانل از پورت رنج استفاده نمایید. دقت نمایید همان پورت هایی که در سرور خارج وارد کردید بری سرور ایران هم وارد نمایید [پورت تانل]
 - برای ریستارت سرویس عدد دلخواه خود را وارد نمایید. من عدد 3 را وارد کردم پس هر 3 ساعت سرویس من ریستارت میشود. دیسکانکشن در گیم مهم است پس با دقت این عدد را وارد نمایید.
 - همان عددی که برای SERVICE RESTART در سرور خارج وارد کردید را هم دز سرور ایران، وارد نمایید.
-- در آخر ایپی سرور ایران و پورت کانفیگ شما نمایش داده میشود.
---------------------------------------
+- در آخر ایپی سرور ایران و پورت کانفیگ شما نمایش داده میشود. 
+  </details>
+</div>
 
+--------------------------------------
 **اسکرین شات**
 
 
@@ -355,7 +373,7 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
   <summary align="right">Click to reveal image</summary>
   
   <p align="right">
-    <img src="https://github.com/Azumi67/KCP_tunnel/assets/119934376/66fe4934-e209-4cb7-b7cd-bc4f778b3ddc" alt="menu screen" />
+    <img src="https://github.com/Azumi67/KCP_tunnel/assets/119934376/44de9cc1-8f77-4b66-981a-e3997b805a50" alt="menu screen" />
   </p>
 </details>
 
@@ -365,7 +383,6 @@ SMUX is a protocol designed to multiplex multiple logical connections over a sin
 **اسکریپت های کارآمد :**
 -
 - این اسکریپت ها optional میباشد.
-
 
  
  Opiran Scripts
@@ -394,6 +411,7 @@ sudo apt-get install python3 -y && apt-get install wget -y && apt-get install py
 ```
 
 - اگر با دستور بالا نتوانستید اسکریپت را اجرا کنید، نخست دستور زیر را اجرا نمایید و سپس دستور اول را دوباره اجرا کنید.
+-  اگر باز هم colorama نصب نشد، همچنین این دستور هم اجرا کنید : pip3 install colorama , pip3 install netifaces
 
 ```
 sudo apt-get install python-pip -y  &&  apt-get install python3 -y && alias python=python3 && python -m pip install colorama && python -m pip install netifaces
@@ -432,7 +450,3 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/KCP_tunnel/main/
 
 -----------------------------------------------------
 
-![youtube-131994968075841675](https://github.com/Azumi67/FRP-V2ray-Loadbalance/assets/119934376/24202a92-aff2-4079-a6c2-9db14cd0ecd1)
-**ویدیوی آموزش**
-
------------------------------------------
