@@ -1770,7 +1770,6 @@ def delete_cron():
         "0 */21 * * * /etc/kcp.sh",
         "0 */22 * * * /etc/kcp.sh",
         "0 */23 * * * /etc/kcp.sh",
-        "0 */24 * * * /etc/kcp.sh"
     ]
 
     existing_crontab = ""
