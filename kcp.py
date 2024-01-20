@@ -1641,7 +1641,6 @@ def remove_multi():
         print("Error:", e.output.decode().strip())
     
 def up_up():
-    clear_c()
     ulimit_setting = 'ulimit -n 65535'
     bashrc_path = os.path.expanduser('~/.bashrc')
 
